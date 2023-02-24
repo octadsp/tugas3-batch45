@@ -48,3 +48,12 @@ function getData(){
     // console.log(subject)
     // console.log(message)
 }
+
+let buttons = document.querySelectorAll('a');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function () {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+    });
+});

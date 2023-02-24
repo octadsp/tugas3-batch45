@@ -1,0 +1,162 @@
+body {
+    background-color: rgb(220, 225, 227);
+    margin: 0px;
+    font-family: 'Franklin Gothic Normal', 'Arial Narrow', Arial, sans-serif;
+}
+
+.active:hover, .active:visited{
+    background-color: rgba(0, 0, 0, 0.112);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 45px;
+}
+
+/* NAVBAR */
+
+nav{
+    background-color: rgb(211, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    height: 70px;
+}
+
+
+.nav-left ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 55px;
+}
+
+.nav-left ul li {
+    margin-right: 35px;
+    font-size: 25px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right{
+    text-align: end;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.nav-right a {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 8px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+
+
+/* FORM INPUT PROJECT*/
+
+/* .tittle-contact {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 400px;
+    margin: 60px;
+    margin-top: 25px;
+    padding: 5px;
+}
+
+form div{
+    margin-top: 20px;
+
+}
+
+label{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: white;
+    font-size: 25px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.20) 0px 5px 10px;
+}
+
+#name{
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: white;
+    font-size: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.20) 0px 5px 10px;
+}
+
+.date-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.date-parent input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: white;
+    font-size: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.20) 0px 5px 10px;
+}
+
+.start {
+    margin-right: 10px;
+}
+
+
+textarea{
+    resize: none;
+    height: 150px;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px 0px;
+    width: 30%;
+} */
+
+.container {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+}

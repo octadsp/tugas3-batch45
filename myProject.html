@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>MyProject</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/project.css" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -15,10 +15,10 @@
             </a>
           </li>
           <li>
-            <a class="a-home" href="index.html">Home</a>
+            <a class="active" href="index.html">Home</a>
           </li>
           <li>
-            <a class="a-project" href="myProject.html">My Project</a>
+            <a class="active" href="myProject.html">My Project</a>
           </li>
         </ul>
       </div>
@@ -28,6 +28,59 @@
         <a href="contactForm.html">Contact Me</a>
       </div>
     </nav>
-    <h1>BELOM ADA BANG</h1>
-  </body>
+
+    <!-- CONTENT MY PROJECT -->
+    <div class="container">
+        <form>
+
+            <div class="tittle-myproject">
+              <h1>ADD MY PROJECT</h1>
+            </div>
+            
+            <div>
+            <label for="project-name">Project Name</label>
+            <input id="project-name" type="text" />
+          </div>
+
+          <div class="container1">
+            <div class="start">
+              <label for="start-date">Start Date</label>
+              <input id="start-date" type="date" />
+            </div>
+            <div class="end">
+              <label for="end-date">End Date</label>
+              <input id="end-date" type="date" />
+            </div>
+          </div>
+
+          <!-- Menu DropDown -->
+          <div>
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option disabled selected value></option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Let's Talk">Let's Talk</option>
+              <option value="Hiring">Hiring</option>
+            </select>
+          </div>
+
+          <!-- Form dengan kanvas yang lebih besar -->
+          <div>
+            <label for="message">Your Message</label>
+            <textarea id="message"></textarea>
+          </div>
+
+          <!-- Button -->
+          <div class="btn-submit">
+            <button type="button" onclick="getData()">submit</button>
+          </div>
+        </form>
+
+
+
+    
+      </form>
+    </div>
+</div>
+</body>
 </html>

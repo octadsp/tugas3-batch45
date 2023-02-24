@@ -4,9 +4,10 @@ body {
     font-family: 'Franklin Gothic Normal', 'Arial Narrow', Arial, sans-serif;
 }
 
-.a-home:hover, .a-project:hover{
-    background-color: rgba(197, 197, 197, 0.112);
+.active:hover, .active:visited{
+    background-color: rgba(0, 0, 0, 0.112);
     font-weight: bold;
+    padding: 5px;
     border-radius: 30px;
 }
 
@@ -66,30 +67,41 @@ nav{
 p{
     margin-top: 5px;
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .card-parent{
     display: flex;
     background-color: rgba(255, 255, 255, 0.8);
-    margin: 50px;
-    height: 800px;
-    justify-content: space-between;
+    margin: 5%;
+    height: 50vw;
+    min-height: 300px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 3px 6px, rgba(0, 0, 0, 0.30) 0px 5px 10px;
 }
 
 .card-right{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 40%;
-    justify-content: center;
-    padding: 50px;
+    margin: 50px 0px;
     /* margin: 70px; */
 }
 
+.card-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 50px 0px;
+    margin-left: 40px;
+}
+
 .profile-card{
-    
+    height: 37vw;
+    margin: 25px;
     background-color: white;
     border: 1px solid #dbdbdba8;
     border-radius: 10px;
@@ -97,7 +109,8 @@ p{
 }
 
 .img-profile{
-    width: 100%;
+    width: 30vw;
+    height: 30vw;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -105,34 +118,30 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px 0px;
-    width: 100%;
+    margin-top: 10px;
 }
 
-.name{
+.name, .tittle-profile{
     margin: 0px;
-    font-size: 30px;
-}
-
-.card-left{
-    width: 60%;
-    margin: 50px 25px 50px 50px;
-}
-
-.tittle-profile{
-    font-size: 30px;
-    margin-top: 90px;
+    font-size: 2vw;
 }
 
 .about{
+    margin-top: 3%;
     text-align: justify;
+}
+
+.div-source {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .source-parent {
     display: flex;
     justify-content: flex-start;
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 1.2vw;
 }
 
 
@@ -141,7 +150,8 @@ p{
     background-color: rgba(0, 0, 0, 0.9);
     margin-right: 40px;
     border-radius: 30px;
-    padding: 10px 45px;
+    /* padding: 10px 45px; */
+    padding: 0.5vw 2vw;
     text-align: center;
 }
 
@@ -154,14 +164,11 @@ p{
 }
 
 .medsos-parent {
-    /* background-color: rgb(255, 0, 0); */
     align-items: start;
-    margin-top: 100px;
-    font-size: 15px;
+    margin-top: 10%;
 }
 
 .medsos-parent ul {
-    
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -169,11 +176,10 @@ p{
 
 .medsos-parent ul li {
     display: flex;
-    font-size: 25px;
 }
 
 .medsos-parent ul li a img {
-    height: 50px;
+    height: 3.5vw;
     margin-right: 30px;
     text-decoration: none;
     color: black;
@@ -218,10 +224,6 @@ input, select, textarea{
 textarea{
     resize: none;
     height: 150px;
-}
-
-select {
-    
 }
 
 .btn-submit {
